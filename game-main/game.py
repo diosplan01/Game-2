@@ -3,7 +3,7 @@ import time
 import random
 from config import *
 from note import Note
-from animations import Explosion, Wave, ParticleEffect, Miss
+from animations import Explosion, Miss
 
 class Game:
     """
@@ -139,10 +139,6 @@ class Game:
             nota.columna * COLUMN_WIDTH + COLUMN_WIDTH // 2,
             nota.y,
             nota.color
-        ))
-        self.animations.append(ParticleEffect(
-            nota.columna * COLUMN_WIDTH + COLUMN_WIDTH // 2,
-            nota.y
         ))
 
         if nota in self.notas:
